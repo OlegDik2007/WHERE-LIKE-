@@ -1,0 +1,12 @@
+SELECT
+  order_id,
+  time
+FROM
+  courier_actions
+WHERE
+  courier_id = 100
+  and action LIKE 'deliver_order'
+ORDER BY
+  time desc
+LIMIT
+  10
